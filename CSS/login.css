@@ -73,6 +73,34 @@ nav span:hover {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  header{
+    padding: 30px  0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo a{
+    font-size: 1.5em;
+  }
+  nav {
+    display: flex;
+    padding-right: 0;
+    font-size: 8px;
+    align-items: center;
+  }
+  nav span {
+    font-size: 15px;
+    border-radius: 35px;
+    padding: 5px;
+    margin-left: 0;
+    font-weight: 300;
+  }
+  .up-to-down {
+    display: none;
+  }
+}
+
 form{
   position: absolute;
   height: 450px;
