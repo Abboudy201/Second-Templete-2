@@ -1,119 +1,122 @@
-* {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-
-/* small */
-@media (min-width: 768px) {
-  .container{
-    width: 750px;
-  }
-}
-/* medium */
-@media (min-width: 992px) {
-  .container{
-    width: 970px;
-  }
-}
-/* large */
-@media (min-width: 1200px) {
-  .container{
-    width: 1170px;
-  }
-}
-
-header {
-  background-color: #BCA37F;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 180px;
-  max-height: 55px;
-}
-
-.logo {
-  transition: 0.8s;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-}
-
-.logo a {
-  font-weight: 900;
-  text-decoration: none;
-  color: #113946;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.8em;
-}
-
-nav a{
-  font-family: 'Courier New', Courier, monospace;
-  padding-right: 35px;
-  text-decoration: none;
-  color: #113946;
-  font-weight: 600;
-  font-size: 1.5em;
-}
-
-nav a:hover {
-  color:#EAD7BB;
-}
-
-nav span {
-  border-radius: 15px 35px;
-  padding: 5px 15px;
-  color:#BCA37F;
-  background-color: #113946;
-  font-size: 24px;
-  font-weight: 600;
-  margin-left: 35px ;
-}
-
-nav span:hover {
-  background-color:#BCA37F;
-  color: #113946;
-}
-@media (max-width: 767px) {
-  header{
-    padding: 30px  0;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .logo a{
-    font-size: 1.5em;
-  }
-  nav {
-    display: flex;
-    padding-right: 0;
-    font-size: 8px;
-    align-items: center;
-  }
-  nav span {
-    font-size: 15px;
-    border-radius: 35px;
-    padding: 5px;
-    margin-left: 0;
-    font-weight: 300;
-  }
-  .up-to-down {
-    display: none;
-  }
-}
-
-.login{ 
+* { 
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+   scroll-behavior: smooth; 
+ } 
+  
+  
+ /* small */ 
+ @media (min-width: 768px) { 
+   .container{ 
+     width: 750px; 
+   } 
+ } 
+ /* medium */ 
+ @media (min-width: 992px) { 
+   .container{ 
+     width: 970px; 
+   } 
+ } 
+ /* large */ 
+ @media (min-width: 1200px) { 
+   .container{ 
+     width: 1170px; 
+   } 
+ } 
+  
+ header { 
+   background-color: #BCA37F; 
+   width: 100%; 
+   position: fixed; 
+   z-index: 999; 
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   padding: 10px 180px; 
+   max-height: 55px; 
+ } 
+  
+ .logo { 
+   transition: 0.8s; 
+ } 
+  
+ .logo:hover { 
+   transform: scale(1.1); 
+ } 
+  
+ .logo a { 
+   font-weight: 900; 
+   text-decoration: none; 
+   color: #113946; 
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   font-size: 1.8em; 
+ } 
+  
+ nav a{ 
+   font-family: 'Courier New', Courier, monospace; 
+   padding-right: 35px; 
+   text-decoration: none; 
+   color: #113946; 
+   font-weight: 600; 
+   font-size: 1.5em; 
+ } 
+  
+ nav a:hover { 
+   color:#EAD7BB; 
+ } 
+  
+ nav span { 
+   border-radius: 15px 35px; 
+   padding: 5px 15px; 
+   color:#BCA37F; 
+   background-color: #113946; 
+   font-size: 24px; 
+   font-weight: 600; 
+   margin-left: 35px ; 
+ } 
+  
+ nav span:hover { 
+   background-color:#BCA37F; 
+   color: #113946; 
+ } 
+  
+ @media (max-width: 767px) { 
+   header{ 
+     padding: 30px  0; 
+     justify-content: space-evenly; 
+     align-items: center; 
+     flex-direction: column; 
+   } 
+   .logo a{ 
+     font-size: 1.5em; 
+   } 
+   nav { 
+     display: flex; 
+     padding-right: 0; 
+     font-size: 8px; 
+     align-items: center; 
+   } 
+   nav span { 
+     font-size: 15px; 
+     border-radius: 35px; 
+     padding: 5px; 
+     margin-left: 0; 
+     font-weight: 300; 
+   } 
+   .up-to-down { 
+     display: none; 
+   } 
+ } 
+  
+  
+ .login{ 
    background-color: #EAD7BB; 
    min-height: 100vh; 
    position: relative; 
- }
+ } 
+ 
 
 form{
   position: absolute;
