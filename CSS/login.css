@@ -109,6 +109,12 @@ nav span:hover {
   }
 }
 
+.login{ 
+   background-color: #EAD7BB; 
+   min-height: 100vh; 
+   position: relative; 
+ }
+
 form{
   position: absolute;
   height: 450px;
