@@ -62,22 +62,31 @@ nav span:hover {
   color: #113946;
 }
 
-@media (max-width: 1079px) {
-  header {
-    display: block;
-    max-height: 95px;
-    width: 100%;
+@media (max-width: 767px) {
+  header{
+    padding: 30px  0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
-  header .logo {
-    text-align: center;
+  .logo a{
+    font-size: 1.5em;
   }
-  .main-header {
-    margin-top: 10px;
+  nav {
     display: flex;
-    justify-content: center;
+    padding-right: 0;
+    font-size: 8px;
+    align-items: center;
   }
-  .main-header a {
-    margin-left: 5%;
+  nav span {
+    font-size: 15px;
+    border-radius: 35px;
+    padding: 5px;
+    margin-left: 0;
+    font-weight: 300;
+  }
+  .up-to-down {
+    display: none;
   }
 }
 
