@@ -6,6 +6,26 @@
   scroll-behavior: smooth;
 }
 
+
+/* small */
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
 header {
   background-color: #BCA37F;
   width: 100%;
@@ -62,17 +82,17 @@ nav span:hover {
   color: #113946;
 }
 
-.login{
-  background-color: #EAD7BB;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
+header .up-to-down {
+  position: absolute;
+  margin-top: 95%;
+  margin-left: 85%;
 }
 
+header .up-to-down a span {
+  overflow: hidden;
+  font-size: 2em;
+  color: #113946;
+}
 @media (max-width: 767px) {
   header{
     padding: 30px  0;
