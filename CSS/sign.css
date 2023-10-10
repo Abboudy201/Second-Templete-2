@@ -1,0 +1,200 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #BCA37F;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 180px;
+  max-height: 55px;
+}
+
+.logo {
+  transition: 0.8s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo a {
+  font-weight: 900;
+  text-decoration: none;
+  color: #113946;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8em;
+}
+
+nav a{
+  font-family: 'Courier New', Courier, monospace;
+  padding-right: 35px;
+  text-decoration: none;
+  color: #113946;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color:#EAD7BB;
+}
+
+nav span {
+  border-radius: 15px 35px;
+  padding: 5px 15px;
+  color:#BCA37F;
+  background-color: #113946;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 35px ;
+}
+
+nav span:hover {
+  background-color:#BCA37F;
+  color: #113946;
+}
+
+@media (max-width: 1079px) {
+  header {
+    display: block;
+    max-height: 95px;
+    width: 100%;
+  }
+  header .logo {
+    text-align: center;
+  }
+  .main-header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-header a {
+    margin-left: 5%;
+  }
+}
+
+
+.sign{
+  background-color: #EAD7BB;
+  min-height: 100vh;
+  position: relative;
+}
+
+form{
+  position: absolute;
+  max-height: 600px;
+  width: 350px;
+  max-height: 100vh;
+  background-color: #BCA37F;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form .links {
+  margin: 5px 10%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+form .links a {
+  text-decoration: none;
+  color: #113946;
+}
+
+form .links a:hover {
+  color: #EAD7BB;
+}
+
+form input {
+  margin: 25px 10%;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+input[type="text"],[type="password"],[type="email"] {
+  color: #113946;
+  background-color: #EAD7BB;
+}
+
+input[type="submit"]{
+  color: #EAD7BB;
+  background-color: #113946;
+  letter-spacing: .5em;
+  font-weight: 600;
+  transition: 1s;
+  border: none;
+}
+input[type="submit"]:hover{
+  background-color: #EAD7BB;
+  color: #113946;
+  letter-spacing: .7em;
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
