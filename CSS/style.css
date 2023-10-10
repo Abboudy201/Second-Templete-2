@@ -119,8 +119,8 @@ header .up-to-down a span {
   .up-to-down {
     display: none;
   }
-
 }
+
 section {
   padding: 100px 200px;
   min-height: 100vh;
@@ -260,6 +260,7 @@ section {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
+  padding-top: 20px;
   color:  #113946;
   letter-spacing: .4ch;
   margin-bottom: 50px;
@@ -359,6 +360,11 @@ section {
   color: #113946;
   margin-bottom: 230px;
 }
+@media (max-width:767px) {
+  .contact h2 {
+    margin-bottom: 95px;
+  }
+}
 
 .call {
   display: flex;
@@ -431,7 +437,7 @@ footer {
 
 @media (max-width: 767px) {
   footer{
-    padding: 0;
+    padding: 15px;
   }
   .footer2 {
     justify-content: space-around;
