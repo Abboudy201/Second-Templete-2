@@ -6,6 +6,26 @@
   scroll-behavior: smooth;
 }
 
+
+/* small */
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
 header {
   background-color: #BCA37F;
   width: 100%;
@@ -62,25 +82,6 @@ nav span:hover {
   color: #113946;
 }
 
-@media (max-width: 1079px) {
-  header {
-    display: block;
-    max-height: 95px;
-    width: 100%;
-  }
-  header .logo {
-    text-align: center;
-  }
-  .main-header {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .main-header a {
-    margin-left: 5%;
-  }
-}
-
 header .up-to-down {
   position: absolute;
   margin-top: 95%;
@@ -92,7 +93,34 @@ header .up-to-down a span {
   font-size: 2em;
   color: #113946;
 }
+@media (max-width: 767px) {
+  header{
+    padding: 30px  0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo a{
+    font-size: 1.5em;
+  }
+  nav {
+    display: flex;
+    padding-right: 0;
+    font-size: 8px;
+    align-items: center;
+  }
+  nav span {
+    font-size: 15px;
+    border-radius: 35px;
+    padding: 5px;
+    margin-left: 0;
+    font-weight: 300;
+  }
+  .up-to-down {
+    display: none;
+  }
 
+}
 section {
   padding: 100px 200px;
   min-height: 100vh;
@@ -107,19 +135,20 @@ section {
   position: relative;
 }
 
-@media (max-width: 1079px) {
-  .main{
-    display: block;
+@media (max-width: 767px) {
+  .video2{
+    display: none;
   }
-  .main .main-text{
+  .main {
     justify-content: center;
-    margin-top: 20px;
+    padding: 0;
   }
-  .main .video {
-    margin-top: 30px;
+  .min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .main h2 {
   position: relative;
   font-family:'Courier New', Courier, monospace;
@@ -134,7 +163,12 @@ section {
   font-weight: 500;
   font-family:'Courier New', Courier, monospace;
 }
-
+@media (max-width: 1169px) {
+  main p {
+    min-width: 720px;
+    max-width: 800px;
+  }
+}
 .main p span a{
   color: #113946;
   text-decoration: none;
@@ -209,6 +243,16 @@ section {
 
 .projects {
   background-color: #EAD7BB;
+}
+
+@media (max-width: 767px) {
+  .projects{
+    padding: 0;
+    
+  }
+  .box:last-child{
+    margin-bottom: 30px;
+  }
 }
 
 .text {
@@ -292,6 +336,25 @@ section {
   min-height: 90vh;
 }
 
+@media (max-width: 767px) {
+  .contact {
+    padding: 0;
+  }
+  .call{
+    flex-direction: column;
+    align-items: center;
+  }
+  .phone,.email{
+    margin-bottom: 20px;
+  }
+  .phone{
+    margin-top: -50px;
+  }
+  .contact h2 {
+    padding-top: 70px;
+  }
+}
+
 .contact h2 {
   color: #113946;
   margin-bottom: 230px;
@@ -364,6 +427,22 @@ section {
 footer {
   padding: 25px 230px;
   background-color: #BCA37F;
+}
+
+@media (max-width: 767px) {
+  footer{
+    padding: 0;
+  }
+  .footer2 {
+    justify-content: space-around;
+  }
+  .text-footer{
+    font-size: .7em;
+  }
+  footer .main-social a {
+    font-size: 1em;
+    margin-left: 15px;
+  }
 }
 
 .footer2 {
